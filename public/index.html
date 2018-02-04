@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <title>Voting App</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Programming language Voting App!</h1>
+            <p>Vote for your favorite programming language</p>
+            <form action="/vote" method="POST" id="vote-form">
+                <p>
+                    <input type="radio" name="PL" id="node" value="Nodejs">
+                    <label for="node">NodeJs</label>
+                </p>
+                <p>
+                    <input type="radio" name="PL" id="python" value="Python">
+                    <label for="python">Python</label>
+                </p>
+                <p>
+                    <input type="radio" name="PL" id="laravel" value="Laravel">
+                    <label for="laravel">Laravel</label>
+                </p>
+                <p>
+                    <input type="radio" name="PL" id="ruby" value="Ruby">
+                    <label for="ruby">Ruby</label>
+                </p>
+                <p>
+                    <input type="radio" name="PL" id="asp" value="ASP">
+                    <label for="asp">ASP.Net</label>
+                </p>
+                <p>
+                    <input type="radio" name="PL" id="other" value="Other">
+                    <label for="other">Something Else</label>
+                </p>
+                <input type="submit" value="Vote" class="btn"> 
+                    
+            </form>
+
+            <br><br>
+            <div id="chartContainer" style="height: 300px; width:100%">
+
+            </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
