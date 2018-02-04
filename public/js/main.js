@@ -8,7 +8,7 @@ form.addEventListener('submit', e => {
         PL: choice
     };
 
-    fetch('https://stark-savannah-55428.herokuapp.com/',{
+    fetch('http://localhost:3000/vote',{
         method: 'POST',
         body: JSON.stringify(data),
         headers: new Headers ({
@@ -23,7 +23,7 @@ form.addEventListener('submit', e => {
 });
 
 //Getign data
-fetch('https://stark-savannah-55428.herokuapp.com/')
+fetch('http://localhost:3000/vote')
     .then(res => res.json())
     .then(data => {
         const votes = data.votes;
